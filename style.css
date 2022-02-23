@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* ------------------ Cores do Menu ------------------ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+/* ------------------- Menu Desk ------------------- */
+.navbar{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding: 10px 0;
+  background: #30013f;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.navbar.sticky .icon.cancel-btn{
+  top: 10px;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* ------------------ Menu Burguer ------------------ */
+@media (max-width: 868px) {
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+  }
+}
+
+/* ---------------- Imagem do fundo ----------------- */
+.banner{
+  height: 50vh;
+  background: url("https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/b/3/2/9/b32971b4e2a41771d152894d76195a5b.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* --------------------- Conteúdo ------------------- */
+
+/* ----------- SOBRE ----------- */
+.about{
+    padding: 40px 0;
+    background-image: linear-gradient(#542868 , #4C2A85);
+}
+.about .title{
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.about h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.about a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.content#corpo{
+    border: 1px solid #000;
+    background-color: rgb(237, 230, 240);
+    border-radius: 20px;
+    padding-bottom: 45px;
+}
+  
+/* ----------- INICIO ----------- */
+.about h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 65px;
+}
+.frase p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ------------ ELENCO ----------- */
+
+/* --- Tabela --- */
+.table {
+    background: rgb(237, 230, 240);
+    padding: 1.5rem 2rem;
+    border-color: #1c0231;
+    border-radius: 0.25rem;
+    margin: 30px;
+    text-align: center;
+}
+table{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: rgba(54, 2, 82, 0.397);
+}
+table, th, td {
+    padding: 0.02px;
+    border-radius: 10px;
+    border: 1px solid rgba(106, 4, 161, 0.644);
+    border-width: medium;
+}
+table td {
+    
+    text-align: center;
+    background-color: rgb(205,192,212);
+}
+table th {
+    font-size: 23px;
+    background-color: rgba(205,192,212) ;
+    color: #430279;
+}
+.table p {
+    text-align: center;
+    font-size: 15pt;
+}
+table .elenco{
+    width: 190px;
+    height: 260px;
+    margin: 2px;
+    opacity: 0.8;
+    display: -webkit-inline-box;
+    border-radius: 150px;
+    transition: .5s ease;
+    border: 3px solid rgba(54, 2, 82, 0.397);
+}
+.elenco:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+    width: 290px;
+    height: 460px;
+    margin: 2px;
+}
+span#name{
+    background-color: rgba(54, 2, 82, 0.397);
+    padding: 8px 14px;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid rgba(54, 2, 82, 0.397);
+}
+
+/* Árvore */
+.card img#arvore{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 5px solid rgba(54, 2, 82, 0.397);
+}
+
+/* ------------ QUIZ ----------- */
+
+/* Formulário */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.questionario{
+  width: 75%;
+  margin: auto;
+  margin-bottom: 45px;
+}
+.about h1{
+  font-size: 30pt;
+  font-weight: 600;
+  margin-top: 1em;
+  text-align: center;
+}
+hr {
+  width: 850px;
+  margin: auto;
+}
+
+/* RADIOS */
+.container input#radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;  
+}
+.checkmark_radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.container:hover input#radio ~ .checkmark_radio {
+    background-color: #ccc;
+}
+.container input#radio:checked ~ .checkmark_radio {
+    background-color: #610386;
+}
+.checkmark_radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input#radio:checked ~ .checkmark_radio:after{
+    display: block;
+}
+.container .checkmark_radio:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+}
+  
+/* BOX */
+.container #checkbox  {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.container:hover input#checkbox ~ .checkmark_box {
+    background-color: #ccc;
+}
+.container input#checkbox:checked ~ .checkmark_box {
+    background-color: #610386;
+}
+.checkmark_box:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input#checkbox:checked ~ .checkmark_box:after {
+  display: block;
+}
+.container .checkmark_box:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+/* Input Text */
+input[type=email], 
+input[type=text], 
+input[type=date], 
+input[type=tel], 
+input[type=time], 
+input[type=number], 
+ select{
+    width: 50%;
+    padding: 12px 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=color]{
+      opacity: 1;
+    display: block;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#color-picker-wrapper {
+      float: left;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+  
+/*Button*/
+button{
+    border: 1px solid #542868;
+    border-radius: 5px;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 13pt;
+    margin-right: 40px;
+    background: #a857ce;
+}
+button:hover{
+    background: #610386;
+  
+}
+
+ /* --------------- CURIOSIDADE --------------- */
+.curiosidade ul {
+    margin: 30px;
+    text-align: justify;
+} 
+.curiosidade ul li{
+    list-style-image: url("img/apple.png");
+    line-height: 0,5em;
+} 
+.card blockquote {
+    text-align: left;
+    list-style-image: none;
+    padding: 17px;
+}
+#audio{
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+ /* ------------ STOREBROOKE ----------- */
+.card_store{
+    background-image: linear-gradient(#6442747a , #604a857c);
+    padding: 1.5rem 2rem;
+    border: 5px solid #67507a;
+    border-radius: 1rem;
+    margin: 30px;
+    text-align: center;
+}
+.imagem{
+    margin: auto;
+    display:inlbine-flex;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    opacity: 0.6;
+    transition: .5s ease;
+    width: 400px;
+    height: 300px;
+}   
+.imagem:hover{
+    display:inline-flex;
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#mapa{
+    min-width: 10%;
+    width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    border: 5px solid #67507a;
+}
+
+  /* ------------ TEMPERATURA ----------- */
+.temporada_imagem{
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+}
+#descricao_capa{
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* --- Episódeo ---*/
+.episodeos{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid #000;
+    background-color: rgb(237, 230, 240);
+    border-radius: 20px;
+    padding: 45px;
+}
+.episodeos h3{
+      font-size: 23px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+
+/* --- Video / Iframe ---*/
+.video{
+      width: 50vw;
+      height: 50vh;
+      display: block;      
+      margin: auto;
+  
+}
+
+/*--- Site Oficial --*/
+.site_oficial{
+    width: 50vw;
+    height: 70vh;
+    display: block;      
+    margin: auto;
+}
+
+/*-- Descrição Episódeos --*/
+details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+}
+@keyframes open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+details summary {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 300;
+    list-style: none;
+}
+details summary:after {
+    content: "+";
+    color: black;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 200ms linear;
+}
+details[open] summary:after {
+    transform: rotate(45deg);
+    font-size: 2rem;
+}
+details summary {
+    outline: 0;
+}
+details p {
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    padding-top: 1rem;
+}
+
+/* ---------------------- Rodepé ---------------------- */
+footer {
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+  font-size: 13pt;
+  color: #ffffff;
+  margin-top: 25px;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+footer a#linkedin{
+  color: #ffffff;
+};
+

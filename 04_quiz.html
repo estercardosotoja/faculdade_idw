@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <title>Once Upon a Time</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Once Upon a Time</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li> <a href="01_index.html"> Inicio </a> </li>
+        <li> <a href="02_sobre.html"> Sobre </a> </li>
+        <li> <a href="03_elenco.html"> Elenco </a> </li>
+        <li> <a href="04_quiz.html"> Quiz </a> </li>
+        <li> <a href="07_temporadas.html">Temporadas</a></li>
+        <li> <a href="05_curiosidade.html"> Curiosidades</a></li>
+        <li> <a href="06_storebrooke.html"> Storebrooke</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+  <div class="about">
+	<div class="content" id="corpo">
+		<h1> QUIZ </h1>
+		<!-- questionário 1-->
+
+		<div class="questionario">
+		<hr>
+			<form id="validar_question1">
+			<h3>Qual personagem do Once Upon a Time você seria? </h3>
+
+				<div> <!--question1-->
+					<p>Numa escala de 1 a 6 quanto você se considera uma pessoa romântica?</p>
+					<label class="container">1
+						<input type="radio" checked="checked" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">2
+						<input type="radio" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">3
+						<input type="radio" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">4
+						<input type="radio" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+				</div>
+
+				<div> <!--question2-->
+					<p>"A vingança nunca é plena mata a alma e envenena" </br> Você concorda com essa frase?</p>
+					<label class="container">Sim
+					<input type="radio" checked="checked" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Não
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+				</div>
+
+				<div> <!--question3-->
+					<p>Qual desses lugares você gostaria de conhecer?</p>
+					<label class="container">Café da Vovó
+					<input type="radio" checked="checked" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">A loja de penhores do senhor Gold
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">A biblioteca de Storybrooke
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">O navio do capitão gancho
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+				</div>
+
+				<div> <!--checkbox-->
+					<P> O que é mais importante:</P>
+					<label class="container">A força
+					<input id=checkbox type="checkbox" checked="checked">
+					<span class="checkmark_box"> </span>
+					</label>
+					<label class="container">A inteligencia
+					<input id=checkbox type="checkbox">
+					<span class="checkmark_box"></span>
+					</label>
+					<label class="container"> O amor
+					<input id=checkbox type="checkbox">
+					<span class="checkmark_box"></span>
+					</label>
+					<label class="container">O poder
+					<input id=checkbox type="checkbox">
+					<span class="checkmark_box"></span>
+					</label>
+				</div>
+
+				<div> <!--question4-->
+					<p>Escolha uma arma:</p>
+					<label class="container">Espada
+					<input type="radio" checked="checked" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Maça
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Arco Flecha 
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Gancho
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Arma
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Varinha
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+				</div>
+
+				<div> <!--question5-->
+					<p>Você é uma pessoa vaidosa?</p>
+					<label class="container">Sim
+					<input type="radio" checked="checked" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Não
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+				</div>
+		
+				<div> <!--color-->
+					<p> Escolha uma cor </p>
+					<input type="color"  id="cor" value=#8108aa>
+				</div>
+
+				<div> <!--Dados-->	
+					<label> <p> Digite seu e-mail: </p></label>
+					<input type="email" id="email" placeholder="email@email.com" required>
+				</div>  
+
+				<button type="submit" name="Submit"> Enviar </button>
+				<button type="reset"> Limpar </button>
+			</form> 	
+		</div>
+	<hr>
+		<!-- questionário 2-->
+
+		<div class="questionario">
+			<form id="validar_question2" >
+			<h3> Qual personagem do Once Upon a Time mais combina com você? </h3>
+
+				<div> <!--question1-->
+					<p>Qual a sua melhor arma?</p>
+					<label class="container">Arma
+					<input type="radio" checked="checked" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Maça Envenenada
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Bolsa de Utilizades
+					<input type="radio" id="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Magia Branca
+						<input type="radio" id="radio">
+					    <span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Adaga 
+						<input type="radio" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+				</div>
+				
+				<div> <!--checkbox1-->
+					<P>O que você faz no seu tempo livre?</P>
+					<label class="container">Fico deitado com meu celular
+						<input type="checkbox" checked="checked" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container">Fico praticando o que eu gosto
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container">Comendo todo tipo de salgado ppipoca ou qualquer coisa salgada
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container">Passando o tempo com quem amo
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container"> Fico na minha lojinha
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container"> Fico assistindo TV
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+				</div>
+				
+				<div> <!--checkbox2-->
+					<p> Se você fosse uma rainha ou rei qual seria seus primeiros mandatos? </p><br>
+					<label class="container"> Que matasse aquela pessoa que me feriu
+						<input type="checkbox" checked="checked"  id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container"> Que procurassem todo o ouro da minha terra para mim
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container"> Que meu mandado seria que todos vivessem em paz
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+					
+					<label class="container"> Que acabassem com todos os tipos de magia da cidade
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+
+					<label class="container"> Que mandaria todos procurarem um(a) lindo(a) rei (rainha) para mim
+						<input type="checkbox" id="checkbox">
+						<span class="checkmark_box"> </span>
+					</label>
+				</div>
+
+				<div> <!--question2-->
+					<p> Você prefere qual fase da Emma Swan a salvadora ou a senhora das Trevas</p>
+					<label class="container">Senhora das Trevas
+						<input type="radio" checked="checked" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+					<label class="container">Salvadora
+						<input type="radio" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+				</div>
+
+				<div> <!--question3-->							
+					<p> Se você fosse a branca de neve fugindo da rainha ma aonde você iria?</p>
+					<label class="container">Entrava em um tronco
+						<input type="radio" checked="checked" id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+
+					<label class="container">Eu a encarava, mesmo que eu morresse
+						<input type="radio"  id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+
+					<label class="container"> Pegaria um barco e iria para a terra do nunca
+						<input type="radio"  id="radio">
+						<span class="checkmark_radio"></span>
+					</label>
+				</div>	
+							
+				<div><!--question4-->
+					<p> Qual desses personagens de contos de fadas da disney qual você seria?</p>
+
+					<label class="container"> Branca de Neve <br>
+					<input  checked="checked" id="radio" type="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+	
+					<label class="container"> Rainha Má <br>
+					<input id="radio" type="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+	
+					<label class="container"> Capitão Gancho <br>
+					<input id="radio" type="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+	
+					<label class="container"> A princisa Swan<br>
+					<input id="radio" type="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+	
+					<label class="container"> Fera<br>
+					<input id="radio" type="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+	
+					<label class="container"> Principe Encatado <br>
+					<input id="radio" type="radio">
+					<span class="checkmark_radio"></span>
+					</label>
+	
+				</div>
+							
+				<div><!--Dados-->	
+					<label> <p> Digite seu e-mail: </p></label>
+					<input type="email" id="email" placeholder="email@email.com" required>
+				</div>  
+							
+				<button type="submit" name="Submit"> Enviar </button>
+				<button type="reset"> Limpar </button>
+			
+			</form>
+		</div>
+	<hr>
+		<!-- questionário 3 -->
+		<div class="questionario">
+			<form id="form_conhecer">
+			<h3><a name="quiz3">Queremos conhecer você!!!</a></h3>			   
+				<label >Qual o seu nome?</label>
+				<input type="text" id="nome" placeholder="Seu nome.." required>
+
+				<p> Qual a sua data de nascimento? </p>
+				<input type="date" id="nasci_date" required>
+									
+				<p> Qual o seu número de telefone? </p>
+				<input type="tel" id="fone" placeholder="99999999" required>
+									
+				<p> Qual horario que mais assiste a série ? </p>
+				<input 	type="time" id="hora" required>
+									
+				<p> Qual temporada você mais gostou?</p>
+				<input type="text" id="temporada" min="1" max="7" required>
+									
+				<p> Qual episódeo você mais gostou?</p>
+				<input type="number" id="episodeo" min="1" max="23" required>
+									
+				<label> <p> Digite seu e-mail: </p></label>
+				<input type="email" id="email" placeholder="email@email.com" required>
+						
+				<button type="submit" name="Submit"> Enviar </button>
+				<button type="reset"> Limpar </button>
+			</form>
+		</div>
+	<hr>
+		<!-- Contato-->
+		<div class="questionario">
+			<form id="form_contato">
+				<h3><a name="contato"> Contato </a></h3>
+				<h4> Entre contato conosco e nos dê ideias para mais Quiz </h4>
+				<label >Qual o seu nome?</label>
+				<input type="text" id="nome" placeholder="Seu nome.." required>
+					
+				<label> <p> Digite seu e-mail: </p></label>
+				<input type="email" id="email" placeholder="email@email.com" required>
+					
+				<p>Deseja ser um participante da comunidade?</p>
+				<select id="participante" size='1' required>
+					<option value="0"> Selecione uma opção</option>
+					<option value="1"> Participar da Comunidade </option>
+					<option value="-1"> Não participar da Comunidade </option>	
+				</select>
+
+				<label> <p>Digite sua sujestões:</p></label>
+				<textarea id="sujestao" spellcheck="true" required ></textarea>
+
+				<button type="submit" name="Submit"> Enviar </button>
+				<button type="reset"> Limpar </button>	
+			</form>
+		</div>
+
+    </div>	
+
+	<footer>
+		<address>
+		  <a href="https://www.linkedin.com/in/ester-toja-692a6566/" target="_blank" id="linkedin"> 
+			<img src="img/linkedin.png"> Ester Toja 
+		  </a> </br> Storybrooke, Maine</br> Nova Inglaterra</br>
+		</address>
+	</footer>
+
+  </div>
+	<script>
+		const body = document.querySelector("body");
+		const navbar = document.querySelector(".navbar");
+		const menu = document.querySelector(".menu-list");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		var form_contato = document.getElementById("form_contato");
+		var form_conhecer = document.getElementById("form_conhecer");
+		var form_question1 = document.getElementById("validar_question1")
+		var form_question2 = document.getElementById("validar_question2")
+
+		menuBtn.onclick = ()=>{
+		menu.classList.add("active");
+		menuBtn.classList.add("hide");
+		cancelBtn.classList.add("show");
+		body.classList.add("disabledScroll");
+		}
+
+		cancelBtn.onclick = ()=>{
+		menu.classList.remove("active");
+		menuBtn.classList.remove("hide");
+		cancelBtn.classList.remove("show");
+		body.classList.remove("disabledScroll");
+		}
+
+		window.onscroll = ()=>{
+		this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+		}
+
+		function confirma_uso_de_dados(){
+		var resul = confirm("Concorda com nossos politicas de uso de dados e nossas politicas de privacidade?");
+		if(resul){
+			resul = confirm("Podes utilizar esse serviço, com sua liberação estaremos utilizando suas informações para melhorar sua experiencia em nosso portal");
+		} else {
+		resul = confirm( "Não podes utilizar esse serviço");
+		return window.location.replace('01_index.html');
+		}
+	}
+
+		form_question1.addEventListener('submit',function(event){
+			event.preventDefault()
+			var email = form_question1.email.value;
+			console.log(email);
+			return window.alert("Estaremos encaminhando a sua resposta para o "+ email + ", obrigada pela sua participação!.");
+		});
+		
+		form_question2.addEventListener('submit',function(event){
+			event.preventDefault()
+			var email = form_question2.email.value;
+			console.log(email);
+			return window.alert("Estaremos encaminhando a sua resposta para o "+ email + ", obrigada pela sua participação!.");
+		});
+
+		form_conhecer.addEventListener('submit',function(event){
+			var nome = document.getElementById('nome').value;
+			var data = document.getElementById('nasci_date').value;
+			var fone = document.getElementById('fone').value;
+			var hora = document.getElementById('hora').value;
+			var temporada = document.getElementById('temporada').value;
+			var episodeo = document.getElementById('episodeo').value;
+			var email = document.getElementById('email').value;
+			console.log(nome);
+			return window.alert(nome + ", obrigada pela sua participação!");
+		});
+
+		form_contato.addEventListener('submit',function(event){
+			event.preventDefault()
+			var nome = form_contato.nome.value;
+			var email = form_contato.email.value;
+			var participante = form_contato.participante.value;
+			var sujestao = document.getElementById('sujestao');
+			if (participante > 0){
+				mensagem = " Você receberá um email com as informações para participar da nossa comunidade!";
+			} else if (participante < 0){
+				mensagem = "Ficamos tristes em não ter sua parceria para criar novos conteúdos na comunidade! Até logo!!";
+			}
+			console.log(nome);
+			return window.alert(nome + ", Obrigada pela sua participação!" + mensagem);
+		});
+
+	</script> 
+</body>
+</html>
